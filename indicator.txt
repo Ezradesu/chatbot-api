@@ -1,0 +1,67 @@
+[AC-02] Predictive Maintenance Copilot
+Accenture
+(Komposisi Tim: 2 Machine Learning + 3 React & Back-End)
+
+Latar Belakang Masalah
+
+Perusahaan energi (pembangkit listrik, pertambangan, oil & gas) mengoperasikan ratusan peralatan kritis seperti turbin, generator, dan transformator. Jika terjadi kerusakan mendadak, biaya downtime sangat tinggi, ditambah risiko keselamatan kerja. Saat ini, banyak tim O&M (Operations & Maintenance) masih mengandalkan laporan manual dan analisis reaktif setelah terjadi kerusakan.
+
+Pain Point:
+
+Data sensor (getaran, temperatur, arus, dll) ada, tapi sulit diinterpretasi cepat.
+
+Tim teknis butuh insight prediktif dan rekomendasi maintenance berbasis data.
+
+Proses manual memperlambat respons dan meningkatkan biaya perbaikan.
+
+Ruang Lingkup Proyek & Tujuan
+Scope
+
+Bangun Copilot berbasis Agentic AI yang bisa:
+
+Mendeteksi anomali dari data sensor peralatan.
+
+Memberikan rekomendasi maintenance (misalnya “Mesin #12 kemungkinan overheating dalam 3 hari”).
+
+Menjawab query natural language dari engineer (“mesin mana yang paling berisiko minggu ini?”).
+
+Simulasi auto-create tiket maintenance (dummy).
+
+Objective
+
+Membantu engineer membuat keputusan lebih cepat dan data-driven.
+
+Menurunkan risiko downtime tidak terencana.
+
+Menyediakan MVP berbasis web app (chat + dashboard).
+
+
+Berikut adalah teks dari gambar yang Anda unggah:
+
+Success Indicator
+
+Model anomaly detection mencapai akurasi/recall >70%.
+
+Agent bisa menjawab query berbasis data sensor dengan benar.
+
+Demo web app bisa menampilkan dashboard + interface chat agent.
+
+Kemampuan Teknis Tim Capstone
+
+ML Engineer (2 orang) -> bangun anomaly detection + predictive model (misalnya LSTM atau XGBoost untuk sensor time-series).
+
+Backend Engineer (2 orang) -> API untuk data sensor + integrasi agent (LangChain/Autogen).
+
+Frontend React (1 orang) -> dashboard status mesin + UI chatbot.
+
+Hasil yang Diharapkan
+
+MVP Web App:
+
+Dashboard kesehatan mesin (real-time + prediksi risiko).
+
+Chatbot/agent untuk query data & rekomendasi maintenance.
+
+Dokumentasi: pipeline data, model ML, arsitektur agent.
+
+Demo akhir: simulasi predictive maintenance berbasis dataset publik.
